@@ -6,7 +6,13 @@ body {
 
 .sidebar {
     background-color: dodgerblue;
+    color: white;
     grid-area: 1 / 1 / 3 / 2;
+}
+
+.sidebar ul {
+    padding: 0;
+    list-style: none;
 }
 
 .header{
@@ -14,6 +20,30 @@ body {
 }
 
 .main-content {
+    display: grid;
     background-color: rgb(216, 230, 234);
+    grid-area: 2 / 2 / 3 / 3;
+    grid-template: 2.75fr 1fr / 1fr 1fr;
+    gap: 15px;
+}
+
+.proyects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.card {
+    background-color: white;
+    
+}
+
+.announcements {
+    background-color: white;
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.trending {
+    background-color: white;
     grid-area: 2 / 2 / 3 / 3;
 }
