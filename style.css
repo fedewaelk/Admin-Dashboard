@@ -2,45 +2,114 @@ body {
     display: grid;
     grid-template: 1fr 4fr / 1fr 5fr;
     height: 100vh;
+    font-family: 'roboto', Times, serif;
 }
 
 .sidebar {
     background-color: dodgerblue;
     color: white;
     grid-area: 1 / 1 / 3 / 2;
+    font-size: 1.7em;
+    padding: 1em;
+    line-height: 2;
+}
+
+.sidebar img {
+    filter: invert(100%) brightness(100%);
+    height: 1em;
+    vertical-align: text-bottom;
+}
+
+#bicicle-icon {
+    height: 2em;
+    vertical-align: middle;
 }
 
 .sidebar ul {
     padding: 0;
     list-style: none;
+    font-size: 0.8em;
 }
 
 .header{
+    display: grid;
     grid-area: 1 / 2 / 2 / 3;
+    padding: 20px;
+    grid-template: 1fr 1.5fr / 2fr 1fr;
+    gap: 20px;
+}
+
+.header img {
+    height: 2em;
+    vertical-align: bottom;
+}
+
+.searchbar {
+    display: flex;
+}
+
+input {
+    height: 2em;
+    width: 100%;
+    border-radius: 15px;
+    background-color: rgb(216, 230, 234);
+}
+
+.user-info {
+}
+
+.avatar {
+    border-radius: 20px;
+}
+
+.presentation {
+    display: flex;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 10px;
+}
+
+button {
+    color: white;
+    background-color: dodgerblue;
+    border-radius: 5px;
+    border: none;
 }
 
 .main-content {
     display: grid;
     background-color: rgb(216, 230, 234);
     grid-area: 2 / 2 / 3 / 3;
-    grid-template: 2.75fr 1fr / 1fr 1fr;
+    grid-template: 1fr 1fr / 3fr 1fr;
     gap: 15px;
+    padding: 20px;
 }
 
 .proyects {
     display: grid;
+    grid-area: 1 / 1 / 3 / 2;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 15px;
 }
 
 .card {
     background-color: white;
-    
 }
 
 .announcements {
+    display: grid;
+    flex-direction: column;
     background-color: white;
     grid-area: 1 / 2 / 2 / 3;
+}
+
+.announcements div {
+    overflow: hidden;
+    height: 33.33%;
 }
 
 .trending {
