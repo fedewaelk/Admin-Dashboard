@@ -177,6 +177,7 @@ button {
     font-size: 0.8rem;
     padding: 10px 20px;
     margin-top: 1rem;
+    border-radius: 10px;
 }
 
 .announcements h4 {
@@ -184,13 +185,13 @@ button {
 }
 
 .announcements p {
-    color: grey;
+    color: gray;
     margin-top: 0;
 }
 
 .line {
     border: none;
-    border-top: 1px solid grey;
+    border-top: 1px solid gray;
     margin: 0;
 }
 
@@ -201,6 +202,33 @@ button {
 }
 
 .trending {
+    display: grid;
     background-color: white;
     margin-top: 1rem;
+    grid-template-rows: repeat(4, 1fr);
+    padding: 20px;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+    
+}
+
+.trend {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.username,
+.tagline {
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+.username {
+    font-weight: bold;
+}
+
+.tagline {
+    color: gray;
 }
